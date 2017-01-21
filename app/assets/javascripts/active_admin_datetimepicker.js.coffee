@@ -6,7 +6,9 @@
     format: 'Y-m-d H:i',
     allowBlank: true,
     defaultSelect: false,
-    validateOnBlur: false
+    validateOnBlur: false,
+    onChangeDateTime: (dp, input) ->
+      input.trigger('change')
   }
 
   entries = $(container).find('input.date-time-picker')
